@@ -1,0 +1,139 @@
+body { 
+  background-image: url(amigo.jpg); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.log {
+  padding: 30px;
+  width: 350px;
+  height: 310px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.6); 
+  backdrop-filter: blur(7px); 
+  box-shadow: 0 20px 20px 20px palevioletred;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out; 
+  background-image: url(back.jpg);
+  background-position: center;
+
+  animation: slideIn 1s ease-out forwards;
+}
+
+.log:hover {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border: 2px solid crimson;
+  box-shadow: 0 20px 30px 20px rgba(183, 75, 75, 0.5);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+}
+
+.input-label {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.inputuser {
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 7px;
+  border: 2px solid #ddd; 
+  transition: border 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.inputuser:focus {
+  border-color: #b74b4b;
+  box-shadow: 0 0 10px rgba(183, 75, 75, 0.6);
+}
+.btn {
+  border-radius: 30px;
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  color: rgb(250, 250, 250);
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  opacity: 0.9;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.btn:hover {
+  background-color: crimson; 
+  transform: scale(1.05); 
+  box-shadow: 0 0 15px crimson; 
+}
+
+.login {
+  color: white;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px #fff;
+  text-align: center;
+  font-family: sans-serif;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.login:hover {
+  color: crimson;
+  text-shadow: 5px 5px 5px #b74b4b; 
+}
+
+.inputs {
+  font-weight: bolder;
+  transition: font-weight 0.3s ease;
+}
+.forgot {
+  text-align: center;
+  margin-bottom: 10px;
+  transition: color 0.3s ease; 
+}
+.show{
+  color: white;
+
+}
+.forgot:hover {
+  color: white; 
+}
+
+a {
+  color: crimson;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #b74b4b; 
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
